@@ -202,6 +202,7 @@
                         <outlet property="tenPctButton" destination="ViP-LU-627" id="BGW-ga-iNV"/>
                         <outlet property="twentyPctButton" destination="8mo-gD-uWe" id="men-Ua-1kN"/>
                         <outlet property="zeroPctButton" destination="dok-1I-xJZ" id="oLA-9o-mXa"/>
+                        <segue destination="gdf-Ic-bwT" kind="presentation" identifier="goToResult" id="fs1-zj-dSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -212,8 +213,8 @@
         <scene sceneID="QbQ-q2-SGn">
             <objects>
                 <viewController id="gdf-Ic-bwT" customClass="ResultViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="f3Z-ej-BiT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <view key="view" contentMode="scaleToFill" id="f3Z-ej-BiT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2t-bB-7Jl">
@@ -249,12 +250,12 @@
                                     <constraint firstItem="ILJ-yO-yHM" firstAttribute="centerY" secondItem="P2t-bB-7Jl" secondAttribute="centerY" id="sCr-uH-8Tz"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44x-QP-mes">
-                                <rect key="frame" x="96.666666666666686" y="764" width="200" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44x-QP-mes">
+                                <rect key="frame" x="96.666666666666686" y="788" width="200" height="54"/>
                                 <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="QvJ-xC-2SN"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="icz-AN-HsL"/>
-                                    <constraint firstAttribute="height" constant="54" id="uc1-2l-uR5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Recalculate">
@@ -287,7 +288,6 @@
                             <constraint firstItem="P2t-bB-7Jl" firstAttribute="top" secondItem="f3Z-ej-BiT" secondAttribute="top" id="SDY-v8-hvY"/>
                             <constraint firstItem="P2t-bB-7Jl" firstAttribute="trailing" secondItem="wX3-sz-Kj5" secondAttribute="trailing" id="aCG-jq-ZWk"/>
                             <constraint firstItem="44x-QP-mes" firstAttribute="centerX" secondItem="f3Z-ej-BiT" secondAttribute="centerX" id="dgI-7F-VSX"/>
-                            <constraint firstAttribute="bottom" secondItem="P2t-bB-7Jl" secondAttribute="bottom" id="oWX-7m-g74"/>
                             <constraint firstItem="P2t-bB-7Jl" firstAttribute="leading" secondItem="wX3-sz-Kj5" secondAttribute="leading" id="vuD-1t-wCJ"/>
                         </constraints>
                     </view>
